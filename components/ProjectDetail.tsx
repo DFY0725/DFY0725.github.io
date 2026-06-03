@@ -54,7 +54,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
       {/* 技术架构 */}
       <section className="mb-10">
         <h2 className="text-lg font-semibold text-[#111] mb-3">技术架构</h2>
-        <pre className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs text-gray-700 whitespace-pre-wrap font-mono leading-relaxed">
+        <pre className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-xs text-gray-700 whitespace-pre-wrap break-words overflow-x-auto font-mono leading-relaxed">
           {project.architecture}
         </pre>
       </section>
