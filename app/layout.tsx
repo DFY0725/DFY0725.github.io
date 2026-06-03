@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     'AI 应用开发工程师，专注 LLM 应用开发、RAG、Agent。安徽大学信息管理与信息系统 2026 届毕业生。',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className="bg-white text-[#111] font-sans">
+      <body className="bg-white text-[#111] font-sans selection:bg-blue-100 selection:text-blue-900">
         <Nav />
         <main className="min-h-screen">{children}</main>
         <Footer />
