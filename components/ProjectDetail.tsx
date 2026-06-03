@@ -79,9 +79,19 @@ export default function ProjectDetail({ project }: { project: Project }) {
           {project.screenshots.map((src, i) => (
             <div
               key={i}
-              className="aspect-video bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs"
+              className="aspect-video bg-gray-100 border border-gray-200 rounded-lg overflow-hidden"
             >
-              <span>截图 {i + 1}</span>
+              {src ? (
+                <img
+                  src={src}
+                  alt={`${project.title} 截图 ${i + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs">
+                  截图 {i + 1}
+                </div>
+              )}
             </div>
           ))}
         </div>
