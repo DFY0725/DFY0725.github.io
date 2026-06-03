@@ -1,6 +1,6 @@
 export default function Hero() {
   const links = [
-    { label: 'GitHub', url: 'https://github.com/dfy' },
+    { label: 'GitHub', url: 'https://github.com/DFY0725' },
     { label: 'Email', url: 'mailto:1711135028@qq.com' },
     { label: '下载简历', url: '/resume.pdf' },
   ];

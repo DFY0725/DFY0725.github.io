@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="w-full max-w-3xl mx-auto px-6 py-8 border-t border-gray-100 text-center text-sm text-gray-400">
       <p>
         © {new Date().getFullYear()} dfy ·{' '}
-        <a href="https://github.com/dfy" className="hover:text-accent transition-colors">
+        <a href="https://github.com/DFY0725" className="hover:text-accent transition-colors">
           GitHub
         </a>
         {' · '}
